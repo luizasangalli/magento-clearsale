@@ -160,9 +160,9 @@ class Cammino_Clearsale_Model_Gateway {
 
 	public function getBaseUrl() {
 		if (Mage::getStoreConfig("payment_services/clearsale/environment") == 'homolog'){
-			$url = 'http://homolog.clearsale.com.br/start/Entrada/EnviarPedido.aspx';
+			$url = 'https://homolog.clearsale.com.br/start/Entrada/EnviarPedido.aspx';
 		} else {
-    		$url = 'http://www.clearsale.com.br/start/Entrada/EnviarPedido.aspx';
+    		$url = 'https://www.clearsale.com.br/start/Entrada/EnviarPedido.aspx';
 		}
 
     	return $url;
